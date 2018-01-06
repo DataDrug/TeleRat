@@ -20,7 +20,7 @@
 
 
 
-### Compile To .EXE:
+# Compile To .EXE:
 ```
 pip install pyinstaller && pyinstaller -F telerat.py
 ```
