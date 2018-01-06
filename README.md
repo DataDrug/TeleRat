@@ -10,3 +10,16 @@
 * **Run Commands of cmd**
 * **Teminate a process that you want to kill it :D**
 * **ETC...**
+
+# Steps:
+### Step1)
+**Take your token from botfather and replace in to `TOKEN`**
+
+### Step2)
+**Replace `YOUR_ID`, Your Number id.**
+
+
+
+### Compile To .EXE:
+```
+pip install pyinstaller && pyinstaller -F telerat.py```
