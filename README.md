@@ -22,5 +22,5 @@
 
 # Compile To .EXE:
 ```
-pip install pyinstaller && pyinstaller -W -F telerat.py
+pip install pyinstaller && pyinstaller -w -F telerat.py
 ```
