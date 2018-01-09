@@ -8,7 +8,7 @@ import sys
 reload(sys)
 sys.setdefaultencoding("utf-8")
 
-TOKEN = '267310245:AAH7d3brKnAmu722qncGIzLsu7Wzu_DYSV8'
+TOKEN = 'TOKEN'
 
 bot = telebot.TeleBot(TOKEN)
 sudo = [YOUR_ID, YOUR_ID]
