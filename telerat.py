@@ -11,7 +11,7 @@ sys.setdefaultencoding("utf-8")
 TOKEN = 'TOKEN'
 
 bot = telebot.TeleBot(TOKEN)
-sudo = [YOUR_ID, YOUR_ID]
+sudo = [YOUR_ID]
 
 try:
     aaa = os.environ
